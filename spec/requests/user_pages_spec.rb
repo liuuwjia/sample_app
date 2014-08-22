@@ -9,6 +9,8 @@ describe "User Pages" do
     let(:user) { FactoryGirl.create(:user) }
 
     before do
+    let(:user) { FactoryGirl.create(:user) }
+    before(:each) do
       sign_in user
       visit users_path
     end
